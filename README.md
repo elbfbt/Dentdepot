@@ -25,11 +25,19 @@ project-folder/
 │   ├── muscle joint/   # Images for Muscle Joint products
 │   ├── Medi devices/   # Images for Medi Devices products
 │   └── (other images)  # Additional images and icons
+├── js/
+│   ├── diabetic.js     # JavaScript for Diabetic Care page
+│   ├── eyecare.js      # JavaScript for Eye Care page
+│   ├── heartcare.js    # JavaScript for Heart Care page
+│   ├── medidevice.js   # JavaScript for Medi Devices page
+│   ├── musclejoint.js  # JavaScript for Muscle Joint page
+│   └── shop.js         # JavaScript for main shop functionality
 ├── shop.html           # Main shop page with product listings and cart functionality
 ├── payment.html        # Standalone payment/checkout page
 ├── musclejoint.html    # Product page for Muscle Joint category
 └── medidevice.html     # Product page for Medi Devices category
 ```
+
 *Note: The folder structure may vary slightly based on your file organization.*
 
 
