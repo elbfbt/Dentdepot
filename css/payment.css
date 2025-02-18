@@ -1,0 +1,227 @@
+#div_payment_main
+{
+	display: none;
+}
+
+#Checkout_form
+{
+	background-color: #eee;
+	border: 1px solid black;
+	border-radius: 8px;
+	width: 600px;
+	position: absolute;
+    top: 55% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+
+#section1
+{
+    width: 600px;
+}
+
+#section1_name
+{
+	margin: 20px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.align
+{
+
+}
+
+#fname
+{
+
+}
+
+#lname
+{
+
+}
+
+#section1_email_and_tp
+{
+	display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#email
+{
+
+}
+
+#tel_no
+{
+
+}
+
+#section1_address_container
+{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#section1_addresslines
+{
+
+}
+
+#address_l1
+{
+
+}
+
+#address_l2
+{
+	margin-top: 10px;
+}
+
+#section1_city_and_postl
+{
+
+}
+
+#city
+{
+	margin-bottom: 10px;
+}
+
+#postel_code
+{
+
+}
+
+#section2
+{
+	padding-top: 10px;
+    width: 600px;
+}
+
+#payment_method {
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.payment_images {
+	margin-right: 25px;
+	margin-left: 25px;
+	width: 50px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.para_align {
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+#payment_form_div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#align_name_icons {			/* <------------ for label */
+	position: relative;
+	left: -2px;
+}
+
+.payment_icons {
+	position: absolute;
+    width: 23px;
+    height: auto;
+    left: -162px;
+    top: -1.5px;
+}
+
+#crd_name {
+	width: 300px;
+	padding-left: 22px;
+}
+
+#align_numbr_icons {		/* <------------ for label */
+	position: relative;
+	left: 2px;
+	top: 3px;
+}
+
+#card_number {
+	width: 300px;
+	padding-left: 23px;
+}
+
+
+#expire_and_cvv {
+	margin-top: 10px;
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#expire {
+	width: 123px;
+}
+
+#div_for_lock_cvv {
+	position: relative;
+	top: 3px;
+	left: 1px;
+}
+
+#lock_for_cvv {			/*<-------lock img for cvv    */
+	width: 20px;
+	left: 2px;
+	top: -2px;
+	position: absolute;
+}
+
+#cvv {
+	padding-left: 25px;
+	width: 123px;
+}
+
+
+					/*----------------- payment btn -----*/
+
+#div_pay_btn {
+	display:flex; 
+	flex-direction:row; 
+	justify-content: center; 
+}
+
+#pay_btn {
+	background-color: white;
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+#pay_btn:hover {
+	background-color: #0e86d4;
+	border-color: #00e0d4;
+	color: white;
+}
+
+.overlay 
+{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 101;
+        display: none;
+}

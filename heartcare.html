@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" type="text/css" href="css/payment.css">
+    <meta charset="UTF-8">
+
+    <title>Heart Care</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style type="text/css">
+        .sticky 
+        {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        /*
+        .sticky + .content 
+        {
+          padding-top: 60px;
+        }
+        */
+</style>
+</head>
+<body>
+          
+    <div id="navbar">
+
+        <!---------------------------- navigation bar ------------------------------------------>
+        </div>
+    
+    
+        <div id="shop_section_main">
+    
+            <div id="div_shop_title">
+                <h2><a class="a" href="heartcare.html">Shop</a></h2>
+                
+                <img src="img/cart-icon.png" alt="cart" id="cart_img" onclick="openNav()">
+                
+            </div>
+    
+            
+            
+        </div>
+    
+       <!---------------------------- category_section ------------------------------------------>
+
+       <div id="category_section_main">
+            
+        <h3 id="category_h3">Category</h3>
+        <ul>
+            <li class="category_list_1 hov_border"><a class="a"  href="heartcare.html">Heart Care</a></li>
+            <li class="category_list_1 hov_border"><a class="a" href="eyecare.html">Eye Care</a></li>
+            <li class="category_list_1 hov_border"><a class="a" href="diabetic.html">Diabetic Care</a></li>
+            <li class="category_list_1 hov_border"><a class="a" href="musclejoint.html">Muscle Joint</a></li>
+            <li class="category_list_1 hov_border"><a class="a" href="medidevice.html">Medi Devices</a></li>
+        </ul>
+    </div>
+    
+        <!---------------------------- shopping content and cart ------------------------------------------>
+    
+        <div id="div_main_shop_content_and_cart">
+    
+            <div id="div_test">
+                <!-- nothing in here -->
+            </div>
+            
+    
+            <div id="div_shop_content">
+    
+                <div class="item_card" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+    
+                    <div>
+                        <div id="part1">
+                    <div id="part1_top">
+                        <div class="card">
+                                <img src="img/Heart care/h1.jpg" alt="item" class="card_img">
+                                <p class="card_header">
+                                    Aspirin<br>Extra Strength
+                                </p>
+                                <h4 class="price">
+                                    $19.9
+                                </h4>
+    
+                                <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                                <div class="div_quentity">
+                                    <label for="quentity1">Quentity</label>
+                                    <input type="number" id="quentity1" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                            
+                                </div>
+                        </div>
+                        
+        
+                        <div class="card">
+                            <img src="img/Heart care/h2.jpg" alt="item" class="card_img">
+                            <p class="card_header">
+                                Lipitor <br> 10mg
+                            </p>
+                            <h4 class="price">
+                                $13.50
+                            </h4>
+    
+                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                            <div class="div_quentity">
+                                <label for="quentity2">Quentity</label>
+                                <input type="number" id="quentity2" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                        
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="img/Heart care/h3.jpg" alt="item" class="card_img">
+                            <p class="card_header">
+                            Beta<br> blockers
+                            </p>
+                            <h4 class="price">
+                                $9.99
+                            </h4>
+    
+                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                            <div class="div_quentity">
+                                <label for="quentity3">Quentity</label>
+                                <input type="number" id="quentity3" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                        
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="img/Heart care/h4.webp" alt="item" class="card_img">
+                            <p class="card_header">
+                                Lisinopril<br>20mg
+                            </p>
+                            <h4 class="price">
+                                $7.40
+                            </h4>
+    
+                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                            <div class="div_quentity">
+                                <label for="quentity4">Quentity</label>
+                                <input type="number" id="quentity4" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                        
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="part1_bottom">
+                        <div class="card">
+                            <img src="img/Heart care/h5.jpg" alt="item" class="card_img">
+                            <p class="card_header">
+                                Nitriglycarin<br>Injection USP
+                            </p>
+                            <h4 class="price">
+                                $19.99
+                            </h4>
+    
+                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                            <div class="div_quentity">
+                                <label for="quentity5">Quentity</label>
+                                <input type="number" id="quentity5" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                        
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="img/Heart care/h6.jpg" alt="item" class="card_img">
+                            <p class="card_header">
+                                Heart Care
+                            </p>
+                            <h4 class="price">
+                                $6.00
+                            </h4>
+    
+                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                            <div class="div_quentity">
+                                <label for="quentity6">Quentity</label>
+                                <input type="number" id="quentity6" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                        
+                            </div>
+        
+                        </div>
+        
+                        <div class="card">
+                            <img src="img/Heart care/h7.jpg" alt="item" class="card_img">
+                            <p class="card_header">
+                                Lastra<br>Sirup
+                            </p>
+                            <h4 class="price">
+                                $9.99
+                            </h4>
+    
+                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                            <div class="div_quentity">
+                                <label for="quentity7">Quentity</label>
+                                <input type="number" id="quentity7" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                        
+                            </div>
+        
+                        </div>
+        
+                        <div class="card">
+                            <img src="img/Heart care/h8.jpg" alt="item" class="card_img">
+                            <p class="card_header">
+                                Vitocare<br>Capsule
+                            </p>
+                            <h4 class="price">
+                                $5.99
+                            </h4>
+    
+                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
+    
+                            <div class="div_quentity">
+                                <label for="quentity8">Quentity</label>
+                                <input type="number" id="quentity8" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
+                        
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+    
+            <!------------------------- shopping cart -------------------------->
+    
+            <div id="cart_section_main">
+    
+                <div id="cart_header">
+                    <p style="font-size: 20px;">Cart</p>
+                    
+                    <img src="img/close-round-icon.png" alt="close_btn" id="close_btn_img" onclick="closeNav()">
+                    
+                </div>
+                
+                <div id="cart_container">
+                    <!-- items ----------------  in ---------------- cart ---->
+                </div>
+    
+                <div id="div_cart_total">
+                    <label for="total">Total: </label>
+                    <input id="total" type="text" name="" value="" name=""  maxlength="10" size="4">
+                </div>
+    
+                <input id="Checkout_btn" type="submit" name="submit" value="CheckOut" onclick="open_checkout()">
+                    
+                
+            </div>
+    
+        </div>
+    
+    <!-- --------------------------------payment form ------------------------------------------>
+        <div id="div_payment_main" class="overlay">
+    
+            <form action="" method="" id="Checkout_form">
+    
+                <h3 style="text-align: center; font-size: 22px; ">Checkout</h3>
+    
+                <div id="section1">
+                    
+                    <div id="section1_name">
+                        
+                        <div>
+                            <label for="fname">First Name: </label>
+                            <br>
+                            <input class="align" type="text" id="fname" title="input your first name" pattern="[a-zA-Z]+" name="first_name" placeholder="First Name" required autofocus>
+                        </div>
+    
+                        <div>
+                            <!-- Last name -->
+                            <label for="lname">Last Name: </label>
+                            <br>
+                            <input class="align" type="text" id="lname" title="input your last name" name="last_name" placeholder="Last Name" required pattern="(?=.*[a-z])(?=.*[A-Z])">
+                        </div>
+    
+                    </div>
+                    
+    
+                    <div id="section1_email_and_tp">
+    
+                        <div style=" position: relative;">
+                            <!-- Email -->
+                            <label for="email">Email: </label>
+                            <br>
+                            <input class="align" type="email" id="email" title="input your email here" name="email" placeholder="Email" required>
+    
+                        </div>
+                        
+                        <div style="position: relative;">
+                            <!-- phone -->
+                            <label for="tel_no">Phone: </label>
+                            <br>
+                            <input  type="tel" id="tel_no" name="phone_no" minlength="9" maxlength="10" title="input your phone number here" placeholder="12 345 6789" pattern="\d+">
+                        </div>
+                        
+                    </div>
+    
+                    <div id="section1_address_container">
+                        
+                        <div id="section1_addresslines">
+    
+                            <!-- Address -->
+                            <label for="address_l1">Address: </label>
+                            <br>
+                            <input class="align" type="text" id="address_l1" name="address_line1" placeholder="Address Line 1" required pattern="(?=.*[a-z])(?=.*[A-Z])">
+    
+                            <br><br>
+    
+                            <input class="align" type="text" id="address_l2" name="address_line2" placeholder="Address Line 2" required pattern="(?=.*[a-z])(?=.*[A-Z])">
+                        
+                        </div>
+    
+                        <div id="section1_city_and_postl">
+                        
+                            <!--- city --->
+                            <label for="city">City:</label>
+                            <br>
+                            <input type="text" id="city" class="align" name="city" title="Input Your City Here" pattern="[A-Za-z ,-0-9]+" >
+    
+                            <br>
+    
+                            <!--- postal code --->
+                            <label for="postel_code">Postal Code:</label>
+                            <br>
+                            <input type="text" id="postel_code" class="align" name="postal_code" title="Input Your Postal Code Here" pattern="[A-Za-z 0-9-/.,]+" required>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div id="section2">
+                    <p class="para_align">Select a payment method.</p>
+                                
+                    <div id="payment_method">
+                        <img class="payment_images" src="img/visa.png" alt="visa card">
+                        <img class="payment_images" src="img/american-express.png" alt="american express">
+                        <img class="payment_images" src="img/card.png" alt="master card">
+                    </div>
+    
+                    <div id="payment_form_div">
+                        
+    
+                        <label for="crd_name" id="align_name_icons">
+                                
+                            <img  src="img/person.png" class="payment_icons">
+                        </label>
+                        <input type="text" name="holder_name" id="crd_name" placeholder=" ">
+    
+                        <br>
+    
+                                
+                        <label for="card_number" id="align_numbr_icons">
+                            <img src="img/credit-card.png" class="payment_icons" style="width:20px;">
+                        </label>
+                        <input type="text" name="card_number" id="card_number" placeholder="Card Number" pattern="^\d{15,16}$">
+    
+                        <div id="expire_and_cvv">
+                            <div style="margin: 10px;position: relative;left: -15px;">
+                                <label for="expire">
+                                    <p style="display: inline; font-size: 12px;">CARD EXPIRY:</p>
+                                </label>
+    
+                                <br>
+                                <input type="month" id="expire" name="expire_date" placeholder="mm/yyyy" size="13">
+                            </div>
+    
+                            <div style="margin: 10px;position: relative;left: 15px;">
+                            
+                                <label for="cvv">
+                                    <p style="display: inline; font-size: 12px;">CVV:</p>
+                                </label>
+                                <br>
+                                <div id="div_for_lock_cvv">
+                                    <img src="img/credit-card.png" id="lock_for_cvv">
+                                </div>
+                                <input type="text" id="cvv" name="cvv" placeholder="***" pattern="^[0-9]{3}$" size="13">
+                            </div>
+                        </div>
+    
+                        <br>
+    
+                        <div id="div_pay_btn">
+    
+                            <input type="submit" name="payment" value="Pay" id="pay_btn" onclick="close_chekout()" required>
+                        </div>
+    
+                        <br><br>
+                                    
+                    </div>
+                                
+                </div>
+    
+    
+                
+            </form>
+            
+        </div>
+    
+    
+    <script>
+    
+    
+        // sticky navigation bar
+    
+        window.onscroll = function() {myFunction()};
+    
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+    
+        function myFunction() 
+        {
+              if (window.pageYOffset >= sticky) 
+              {
+                navbar.classList.add("sticky")
+              } 
+              else 
+              {
+                navbar.classList.remove("sticky");
+              }
+        }
+    </script>
+    
+    <script>
+    
+        //for close and open cart
+    
+        function openNav()
+        {
+            document.getElementById("cart_section_main").style.display="block";
+    
+            document.getElementById("cart_section_main").style.transition="1s";
+            document.getElementById("cart_section_main").style.width="300px";
+            document.getElementById("cart_section_main").style.minWidth="300px";
+            document.getElementById("div_shop_content").style.padding="0";
+        }
+    
+        function closeNav()
+        {
+            document.getElementById("cart_section_main").style.display="none";
+    
+            document.getElementById("div_shop_content").style.paddingRight="250px";
+    
+            document.getElementById("cart_section_main").style.transition="1s";
+        }
+    
+    </script>
+    
+    <script>
+    
+        function addToCart(btn) 
+        {
+            var itemCard = btn.closest('.card');
+            var itemName = itemCard.querySelector('.card_header').innerText;
+            var itemPrice = parseFloat(itemCard.querySelector('.price').innerText.replace('$', ''));
+            var itemQuantity = parseInt(itemCard.querySelector('.select_quentity').value);
+    
+            var cartContainer = document.getElementById('cart_container');
+            var cartItem = document.createElement('div');
+            cartItem.classList.add('cart_item');
+    
+            cartItem.innerHTML = `
+            <div class="cart_item_container">
+    
+                <div style="display:flex; flex-direction: row; align-items: center; flex-wrap: wrap; justify-content: space-around; background-color: #f1fafc; border-radius: 6px; border: none; padding: 2px; margin: 5px; border: 2px solid #0e86d4;">
+    
+                    <div class="cart_item_img">
+                        <img src="img/pack.png" alt="item" style="width: 70px; height: 70px;">
+                    </div>
+    
+                    <div class="cart_item_details">
+                        <p style="width:100px; font-size:13px;">${itemName}</p>
+                        <p style="width:100px; font-size:13px;">Price: $${itemPrice.toFixed(2)}</p>
+                        <p style="width:100px; font-size:13px;">Quantity: 
+                            <input type="number" class="input_quantity" value="${itemQuantity}" min="1" onchange="updateQuantity(this)" style="width:25px; padding:2px;">
+                        </p>
+                    </div>
+    
+                    <div class="cart_item_controls">
+                        
+                            <img src="img/recycle-bin.png" alt="remove" style="width: 15px; height: 15px; border-radius: 50%; border: 1px solid black; padding:2px;"class="btn_remove" onclick="removeFromCart(this)"  title="Remove">
+                        
+                    </div>
+                </div>
+    
+            </div>
+        `;
+    
+    
+            cartContainer.appendChild(cartItem);
+    
+            updateTotal();
+        }
+    
+        function removeFromCart(btn) {
+            var cartItem = btn.closest('.cart_item');
+            cartItem.remove();
+            updateTotal();
+        }
+    
+        function updateQuantity(input) {
+            var newQuantity = parseInt(input.value);
+            if (newQuantity < 1) {
+                input.value = 1;
+            }
+            updateTotal();
+        }
+    
+        function updateTotal() {
+        var total = 0;
+        var cartItems = document.querySelectorAll('.cart_item');
+        cartItems.forEach(function(cartItem) {
+            var priceText = cartItem.querySelector('.cart_item_details p:nth-child(2)').textContent;
+            var price = parseFloat(priceText.replace(/[^0-9.-]+/g,"")); // Extract digits and dots from price text
+            var quantity = parseInt(cartItem.querySelector('.input_quantity').value);
+            console.log("Price:", price, "Quantity:", quantity); // Debugging
+            total += price * quantity;
+        });
+        if (!isNaN(total)) {
+            document.getElementById('total').value = total.toFixed(2);
+        } else {
+            document.getElementById('total').value = "0.00"; // Set total to zero if NaN
+        }
+    }
+    
+    
+    </script>
+    
+    <script>
+        function close_chekout() 
+        {
+            document.getElementById("div_payment_main").style.display="none";
+            document.body.style.opacity = "1";
+        }
+    </script>
+    
+    <script>
+        function open_checkout() 
+        {
+            document.getElementById("div_payment_main").style.display = "block";
+            document.getElementById("div_payment_main").style.opacity="1";
+            document.getElementById("cart_section_main").style.transition = "1s";
+        }
+    </script>
+    
+    
+    <script>
+    
+        // for debugging purposes
+    
+        function addHoverEffect(element) {
+        console.log("Adding hover effect");
+        var card = element.querySelector('.card');
+        console.log(card);
+        card.classList.add('hover');
+    }
+    
+    function removeHoverEffect(element) {
+        console.log("Removing hover effect");
+        var card = element.querySelector('.card');
+        console.log(card);
+        card.classList.remove('hover');
+    }
+    </script>
+    
+    
+    
+</body>
+</html>
