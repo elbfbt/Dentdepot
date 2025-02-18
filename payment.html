@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/payment.css">
 </head>
+
 <body>
 
 	<div id="div_payment_main">
@@ -16,24 +18,26 @@
 			<h3 style="text-align: center; font-size: 22px; ">Checkout</h3>
 
 			<div id="section1">
-				
+
 				<div id="section1_name">
-					
+
 					<div>
 						<label for="fname">First Name: </label>
 						<br>
-						<input class="align" type="text" id="fname" title="input your first name" pattern="[a-zA-Z]+" name="first_name" placeholder="First Name" required autofocus>
+						<input class="align" type="text" id="fname" title="input your first name" pattern="[a-zA-Z]+"
+							name="first_name" placeholder="First Name" required autofocus>
 					</div>
 
 					<div>
 						<!-- Last name -->
 						<label for="lname">Last Name: </label>
 						<br>
-						<input class="align" type="text" id="lname" title="input your last name" name="last_name" placeholder="Last Name" required pattern="(?=.*[a-z])(?=.*[A-Z])">
+						<input class="align" type="text" id="lname" title="input your last name" name="last_name"
+							placeholder="Last Name" required pattern="(?=.*[a-z])(?=.*[A-Z])">
 					</div>
 
 				</div>
-				
+
 
 				<div id="section1_email_and_tp">
 
@@ -41,47 +45,53 @@
 						<!-- Email -->
 						<label for="email">Email: </label>
 						<br>
-						<input class="align" type="email" id="email" title="input your email here" name="email" placeholder="Email" required>
+						<input class="align" type="email" id="email" title="input your email here" name="email"
+							placeholder="Email" required>
 
 					</div>
-					
+
 					<div style="position: relative;">
 						<!-- phone -->
 						<label for="tel_no">Phone: </label>
 						<br>
-						<input  type="tel" id="tel_no" name="phone_no" minlength="9" maxlength="10" title="input your phone number here" placeholder="12 345 6789" pattern="\d+">
+						<input type="tel" id="tel_no" name="phone_no" minlength="9" maxlength="10"
+							title="input your phone number here" placeholder="12 345 6789" pattern="\d+">
 					</div>
-					
+
 				</div>
 
 				<div id="section1_address_container">
-					
+
 					<div id="section1_addresslines">
 
 						<!-- Address -->
 						<label for="address_l1">Address: </label>
 						<br>
-						<input class="align" type="text" id="address_l1" name="address_line1" placeholder="Address Line 1" required pattern="(?=.*[a-z])(?=.*[A-Z])">
+						<input class="align" type="text" id="address_l1" name="address_line1"
+							placeholder="Address Line 1" required pattern="(?=.*[a-z])(?=.*[A-Z])">
 
 						<br><br>
 
-						<input class="align" type="text" id="address_l2" name="address_line2" placeholder="Address Line 2" required pattern="(?=.*[a-z])(?=.*[A-Z])">
-					
+						<input class="align" type="text" id="address_l2" name="address_line2"
+							placeholder="Address Line 2" required pattern="(?=.*[a-z])(?=.*[A-Z])">
+
 					</div>
 
 					<div id="section1_city_and_postl">
-					
+
 						<!--- city --->
 						<label for="city">City:</label>
 						<br>
-						<input type="text" id="city" class="align" name="city" title="Input Your City Here" pattern="[A-Za-z ,-0-9]+" >
+						<input type="text" id="city" class="align" name="city" title="Input Your City Here"
+							pattern="[A-Za-z ,-0-9]+">
 
 						<br>
 
 						<!--- postal code --->
 						<label for="postel_code">Postal Code:</label>
 						<br>
-						<input type="text" id="postel_code" class="align" name="postal_code" title="Input Your Postal Code Here" pattern="[A-Za-z 0-9-/.,]+" required>
+						<input type="text" id="postel_code" class="align" name="postal_code"
+							title="Input Your Postal Code Here" pattern="[A-Za-z 0-9-/.,]+" required>
 
 					</div>
 
@@ -91,7 +101,7 @@
 
 			<div id="section2">
 				<p class="para_align">Select a payment method.</p>
-							
+
 				<div id="payment_method">
 					<img class="payment_images" src="img/visa.png" alt="visa card">
 					<img class="payment_images" src="img/american-express.png" alt="american express">
@@ -99,21 +109,22 @@
 				</div>
 
 				<div id="payment_form_div">
-					
+
 
 					<label for="crd_name" id="align_name_icons">
-							
-						<img  src="img/person.png" class="payment_icons">
+
+						<img src="img/person.png" class="payment_icons">
 					</label>
 					<input type="text" name="holder_name" id="crd_name" placeholder=" ">
 
 					<br>
 
-							
+
 					<label for="card_number" id="align_numbr_icons">
 						<img src="img/credit-card.png" class="payment_icons" style="width:20px;">
 					</label>
-					<input type="text" name="card_number" id="card_number" placeholder="Card Number" pattern="^\d{15,16}$">
+					<input type="text" name="card_number" id="card_number" placeholder="Card Number"
+						pattern="^\d{15,16}$">
 
 					<div id="expire_and_cvv">
 						<div style="margin: 10px;position: relative;left: -15px;">
@@ -126,7 +137,7 @@
 						</div>
 
 						<div style="margin: 10px;position: relative;left: 15px;">
-						
+
 							<label for="cvv">
 								<p style="display: inline; font-size: 12px;">CVV:</p>
 							</label>
@@ -146,16 +157,17 @@
 					</div>
 
 					<br><br>
-								
+
 				</div>
-							
+
 			</div>
 
 
-			
+
 		</form>
-		
+
 	</div>
 
 </body>
+
 </html>
