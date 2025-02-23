@@ -1,6 +1,6 @@
 # Shop Project
 
-## Overview
+## Overview 
 
 This is a simple static shopping website built using HTML, CSS, and JavaScript. The project showcases multiple product pages—including Heart Care, Eye Care, Diabetic Care, Muscle Joint, and Medi Devices—each with a dynamic shopping cart and checkout form. It was designed to provide a smooth user experience with interactive elements such as sticky navigation, real-time cart updates, and an overlay-based checkout form.
 
