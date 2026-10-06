@@ -1,419 +1,138 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shop</title>
-
-    <link rel="stylesheet" href="css/shop.css">
-    <link rel="stylesheet" type="text/css" href="css/payment.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <style type="text/css">
-        .sticky 
-        {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-        /*
-        .sticky + .content 
-        {
-          padding-top: 60px;
-        }
-        */
-    </style>
-
-</head>
-<body>
-
-    <div id="navbar">
-
-    <!---------------------------- navigation bar ------------------------------------------>
-    </div>
-
-
-    <div id="shop_section_main">
-
-        <div id="div_shop_title">
-            <h2><a class="a" href="heartcare.html">Shop</a></h2>
-            
-            <img src="img/cart-icon.png" alt="cart" id="cart_img" onclick="openNav()">
-            
-        </div>
-
-        
-        
-    </div>
-
-    <!---------------------------- category_section ------------------------------------------>
-
-    <div id="category_section_main">
-        
-        <h3 id="category_h3">Category</h3>
-        <ul>
-            <li class="category_list_1 hov_border"><a class="a"  href="heartcare.html">Heart Care</a></li>
-            <li class="category_list_1 hov_border"><a class="a" href="eyecare.html">Eye Care</a></li>
-            <li class="category_list_1 hov_border"><a class="a" href="diabetic.html">Diabetic Care</a></li>
-            <li class="category_list_1 hov_border"><a class="a" href="musclejoint.html">Muscle Joint</a></li>
-            <li class="category_list_1 hov_border"><a class="a" href="medidevice.html">Medi Devices</a></li>
-        </ul>
-    </div>
-
-    <!---------------------------- shopping content and cart ------------------------------------------>
-
-    <div id="div_main_shop_content_and_cart">
-
-        <div id="div_test">
-            <!-- nothing in here -->
-        </div>
-        
-
-        <div id="div_shop_content">
-
-            <div class="item_card" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
-
-                <div>
-                    <div id="part1">
-                <div id="part1_top">
-                    <div class="card">
-                            <img src="img/pack.png" alt="item" class="card_img">
-                            <p class="card_header">
-                                True Lovers <br> Art
-                            </p>
-                            <h4 class="price">
-                                $19.9
-                            </h4>
-
-                            <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                            <div class="div_quentity">
-                                <label for="quentity1">Quentity</label>
-                                <input type="number" id="quentity1" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                        
-                            </div>
-                    </div>
-                    
-    
-                    <div class="card">
-                        <img src="img/pack.png" alt="item" class="card_img">
-                        <p class="card_header">
-                            Eternal <br> Family Art
-                        </p>
-                        <h4 class="price">
-                            $29.99
-                        </h4>
-
-                        <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                        <div class="div_quentity">
-                            <label for="quentity2">Quentity</label>
-                            <input type="number" id="quentity2" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                    
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <img src="img/pack.png" alt="item" class="card_img">
-                        <p class="card_header">
-                            Valentine's <br> Dream
-                        </p>
-                        <h4 class="price">
-                            $39.99
-                        </h4>
-
-                        <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                        <div class="div_quentity">
-                            <label for="quentity3">Quentity</label>
-                            <input type="number" id="quentity3" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                    
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <img src="img/pack.png" alt="item" class="card_img">
-                        <p class="card_header">
-                            Past Bar's <br> Mirage
-                        </p>
-                        <h4 class="price">
-                            $39.99
-                        </h4>
-
-                        <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                        <div class="div_quentity">
-                            <label for="quentity4">Quentity</label>
-                            <input type="number" id="quentity4" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                    
-                        </div>
-                    </div>
-                </div>
-
-                <div id="part1_bottom">
-                    <div class="card">
-                        <img src="img/pack.png" alt="item" class="card_img">
-                        <p class="card_header">
-                            Historical <br> Confusion
-                        </p>
-                        <h4 class="price">
-                            $39.99
-                        </h4>
-
-                        <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                        <div class="div_quentity">
-                            <label for="quentity5">Quentity</label>
-                            <input type="number" id="quentity5" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                    
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <img src="img/pack.png" alt="item" class="card_img">
-                        <p class="card_header">
-                            Meaningful <br> Stories
-                        </p>
-                        <h4 class="price">
-                            $39.99
-                        </h4>
-
-                        <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                        <div class="div_quentity">
-                            <label for="quentity6">Quentity</label>
-                            <input type="number" id="quentity6" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                    
-                        </div>
-    
-                    </div>
-    
-                    <div class="card">
-                        <img src="img/pack.png" alt="item" class="card_img">
-                        <p class="card_header">
-                            Past Fresh <br> Rivers
-                        </p>
-                        <h4 class="price">
-                            $39.99
-                        </h4>
-
-                        <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                        <div class="div_quentity">
-                            <label for="quentity7">Quentity</label>
-                            <input type="number" id="quentity7" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                    
-                        </div>
-    
-                    </div>
-    
-                    <div class="card">
-                        <img src="img/pack.png" alt="item" class="card_img">
-                        <p class="card_header">
-                            Mysterious <br> Village
-                        </p>
-                        <h4 class="price">
-                            $39.99
-                        </h4>
-
-                        <button type="button" class="btn_bskt" onclick="addToCart(this)">Add to Basket</button>
-
-                        <div class="div_quentity">
-                            <label for="quentity8">Quentity</label>
-                            <input type="number" id="quentity8" name="quentity" class="select_quentity" value="1"  min="1" oninput="validity.valid||(value='');">
-                    
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-                </div>
-                
-            </div>
-        </div>
-
-
-        <!------------------------- shopping cart -------------------------->
-
-        <div id="cart_section_main">
-
-            <div id="cart_header">
-                <p style="font-size: 20px;">Cart</p>
-                
-                <img src="img/close-round-icon.png" alt="close_btn" id="close_btn_img" onclick="closeNav()">
-                
-            </div>
-            
-            <div id="cart_container">
-                <!-- items ----------------  in ---------------- cart ---->
-            </div>
-
-            <div id="div_cart_total">
-                <label for="total">Total: </label>
-                <input id="total" type="text" name="" value="" name=""  maxlength="10" size="4">
-            </div>
-
-            <input id="Checkout_btn" type="submit" name="submit" value="CheckOut" onclick="open_checkout()">
-                
-            
-        </div>
-
-    </div>
-
-<!-- --------------------------------payment form ------------------------------------------>
-    <div id="div_payment_main" class="overlay">
-
-        <form action="" method="" id="Checkout_form">
-
-            <h3 style="text-align: center; font-size: 22px; ">Checkout</h3>
-
-            <div id="section1">
-                
-                <div id="section1_name">
-                    
-                    <div>
-                        <label for="fname">First Name: </label>
-                        <br>
-                        <input class="align" type="text" id="fname" title="input your first name" pattern="[a-zA-Z]+" name="first_name" placeholder="First Name" required autofocus>
-                    </div>
-
-                    <div>
-                        <!-- Last name -->
-                        <label for="lname">Last Name: </label>
-                        <br>
-                        <input class="align" type="text" id="lname" title="input your last name" name="last_name" placeholder="Last Name" required pattern="(?=.*[a-z])(?=.*[A-Z])">
-                    </div>
-
-                </div>
-                
-
-                <div id="section1_email_and_tp">
-
-                    <div style=" position: relative;">
-                        <!-- Email -->
-                        <label for="email">Email: </label>
-                        <br>
-                        <input class="align" type="email" id="email" title="input your email here" name="email" placeholder="Email" required>
-
-                    </div>
-                    
-                    <div style="position: relative;">
-                        <!-- phone -->
-                        <label for="tel_no">Phone: </label>
-                        <br>
-                        <input  type="tel" id="tel_no" name="phone_no" minlength="9" maxlength="10" title="input your phone number here" placeholder="12 345 6789" pattern="\d+">
-                    </div>
-                    
-                </div>
-
-                <div id="section1_address_container">
-                    
-                    <div id="section1_addresslines">
-
-                        <!-- Address -->
-                        <label for="address_l1">Address: </label>
-                        <br>
-                        <input class="align" type="text" id="address_l1" name="address_line1" placeholder="Address Line 1" required pattern="(?=.*[a-z])(?=.*[A-Z])">
-
-                        <br><br>
-
-                        <input class="align" type="text" id="address_l2" name="address_line2" placeholder="Address Line 2" required pattern="(?=.*[a-z])(?=.*[A-Z])">
-                    
-                    </div>
-
-                    <div id="section1_city_and_postl">
-                    
-                        <!--- city --->
-                        <label for="city">City:</label>
-                        <br>
-                        <input type="text" id="city" class="align" name="city" title="Input Your City Here" pattern="[A-Za-z ,-0-9]+" >
-
-                        <br>
-
-                        <!--- postal code --->
-                        <label for="postel_code">Postal Code:</label>
-                        <br>
-                        <input type="text" id="postel_code" class="align" name="postal_code" title="Input Your Postal Code Here" pattern="[A-Za-z 0-9-/.,]+" required>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div id="section2">
-                <p class="para_align">Select a payment method.</p>
-                            
-                <div id="payment_method">
-                    <img class="payment_images" src="img/visa.png" alt="visa card">
-                    <img class="payment_images" src="img/american-express.png" alt="american express">
-                    <img class="payment_images" src="img/card.png" alt="master card">
-                </div>
-
-                <div id="payment_form_div">
-                    
-
-                    <label for="crd_name" id="align_name_icons">
-                            
-                        <img  src="img/person.png" class="payment_icons">
-                    </label>
-                    <input type="text" name="holder_name" id="crd_name" placeholder=" ">
-
-                    <br>
-
-                            
-                    <label for="card_number" id="align_numbr_icons">
-                        <img src="img/credit-card.png" class="payment_icons" style="width:20px;">
-                    </label>
-                    <input type="text" name="card_number" id="card_number" placeholder="Card Number" pattern="^\d{15,16}$">
-
-                    <div id="expire_and_cvv">
-                        <div style="margin: 10px;position: relative;left: -15px;">
-                            <label for="expire">
-                                <p style="display: inline; font-size: 12px;">CARD EXPIRY:</p>
-                            </label>
-
-                            <br>
-                            <input type="month" id="expire" name="expire_date" placeholder="mm/yyyy" size="13">
-                        </div>
-
-                        <div style="margin: 10px;position: relative;left: 15px;">
-                        
-                            <label for="cvv">
-                                <p style="display: inline; font-size: 12px;">CVV:</p>
-                            </label>
-                            <br>
-                            <div id="div_for_lock_cvv">
-                                <img src="img/credit-card.png" id="lock_for_cvv">
-                            </div>
-                            <input type="text" id="cvv" name="cvv" placeholder="***" pattern="^[0-9]{3}$" size="13">
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <div id="div_pay_btn">
-
-                        <input type="submit" name="payment" value="Pay" id="pay_btn" onclick="close_chekout()" required>
-                    </div>
-
-                    <br><br>
-                                
-                </div>
-                            
-            </div>
-
-
-            
-        </form>
-        
-    </div>
-
-    <script src="js/shop.js"></script>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dentora | Dental supplies</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5faf9;--card:#fff;--ink:#0f2a2e;--mut:#5b7377;--tl:#0e7c7b;--soft:#e0f0ee;--cta:#ff6b4a;--bd:#d6e6e4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a1c;--card:#12292c;--ink:#e8f3f2;--mut:#93aeb1;--tl:#3fc1bd;--soft:#173538;--bd:#244447}}
+:root[data-theme="dark"]{--bg:#0b1a1c;--card:#12292c;--ink:#e8f3f2;--mut:#93aeb1;--tl:#3fc1bd;--soft:#173538;--bd:#244447}
+*{box-sizing:border-box}html{height:100%;scroll-padding-top:80px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.5}
+.w{max-width:1100px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--bd)}
+.bar{display:flex;align-items:center;gap:12px;padding:12px 0}
+.logo{font-weight:800;font-size:22px;color:var(--tl);letter-spacing:-.5px}
+.bar input{flex:1;min-width:0;padding:11px 16px;border-radius:999px;border:1px solid var(--bd);background:var(--card);color:var(--ink);font:inherit}
+button{font:inherit;cursor:pointer}
+.cartb{background:var(--cta);color:#fff;border:0;border-radius:999px;padding:10px 16px;font-weight:700;white-space:nowrap}
+.hero{padding:44px 0 26px}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.08;margin:0 0 14px;max-width:16ch;letter-spacing:-1.5px}
+.hero p{color:var(--mut);max-width:52ch;margin:0 0 18px;font-size:17px}
+.offer{background:var(--soft);border-radius:16px;padding:14px 18px;display:inline-block;font-size:15px}
+.offer b{color:var(--tl)}
+.menub{background:var(--card);border:1px solid var(--bd);color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:700;white-space:nowrap}
+#sd{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:9}
+#sd.o{display:block}
+#sbp{background:var(--bg);width:min(320px,86%);height:100%;overflow:auto;padding:18px;padding-top:calc(18px + env(safe-area-inset-top,0px))}
+.sh{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:18px}
+.sh button{background:none;border:0;color:var(--ink);font-size:20px}
+#sb button{display:flex;justify-content:space-between;width:100%;text-align:left;border:0;background:none;color:var(--ink);padding:12px 10px;border-radius:10px;font-weight:700}
+#sb .sub{padding-left:24px;font-weight:500;font-size:14px}
+#sb button.on{background:var(--tl);color:#fff}
+#sb .gh span{color:var(--tl);font-size:18px}
+h2{font-size:22px;margin:30px 0 12px;letter-spacing:-.3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.p{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:10px;display:flex;flex-direction:column}
+.ph{aspect-ratio:1;border-radius:10px;background:var(--soft);display:grid;place-items:center;color:var(--mut);font-size:12px;margin-bottom:10px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.n{font-weight:500;font-size:14px;flex:1;margin-bottom:8px}
+.r{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.pr{font-weight:800;color:var(--tl)}
+.add{background:var(--cta);color:#fff;border:0;border-radius:10px;padding:7px 12px;font-weight:700;font-size:13px}
+.add:active{transform:scale(.95)}
+.empty{color:var(--mut);padding:30px 0}
+footer{color:var(--mut);text-align:center;padding:40px 0 30px;font-size:14px}
+#dr{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:9;justify-content:flex-end}
+#dr.o{display:flex}
+#pn{background:var(--bg);width:min(400px,100%);height:100%;padding:18px;padding-top:calc(18px + env(safe-area-inset-top,0px));display:flex;flex-direction:column}
+#items{flex:1;overflow:auto}
+.ci{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid var(--bd);font-size:14px}
+.q button{width:26px;height:26px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--ink)}
+.tot{font-weight:800;font-size:18px;margin:12px 0}
+.cp{background:var(--tl);color:#fff;border:0;border-radius:12px;padding:13px;font-weight:700}
+#cv,#co,#dn{display:none;flex:1;min-height:0;flex-direction:column;gap:10px;overflow:auto}
+#cv.o,#co.o,#dn.o{display:flex}
+.f{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--mut)}
+.f input,.f textarea,.dc input,#ot{padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--ink);font:inherit;width:100%}
+.lb{font-weight:700;font-size:14px;margin-top:6px}
+.pmo{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--bd);border-radius:12px;background:var(--card);margin-bottom:8px;cursor:pointer;font-size:14px}
+.pmo small{color:var(--mut)}
+.dc{display:flex;gap:8px}
+.dc button,.bk{border:1px solid var(--tl);background:none;color:var(--tl);border-radius:10px;padding:10px 14px;font-weight:700}
+.er{color:var(--cta);font-size:14px;margin:0}
+:focus-visible{outline:3px solid var(--tl);outline-offset:2px}
+</style></head><body>
+<header><div class="w bar"><button class="menub" onclick="sd(1)" aria-label="Browse categories">☰ Browse</button><span class="logo">Dentora</span><input id="s" type="search" placeholder="Search products" aria-label="Search products"><button class="cartb" onclick="tg(1)">Cart <span id="cc">0</span></button></div></header>
+<main class="w">
+<section class="hero"><h1>Everything your clinic needs, in one place.</h1>
+<p>Dental materials and instruments for students and doctors. Pick what you need, send us your order, and we handle the invoice and delivery.</p>
+<div class="offer">Want to start your own dental supply business? We set up your online store and supply the materials for <b>25,000 EGP</b>.</div></section>
+<div id="list"></div>
+</main>
+<div id="sd" onclick="if(event.target==this)sd(0)"><aside id="sbp"><div class="sh"><b>Categories</b><button onclick="sd(0)" aria-label="Close">✕</button></div><div id="sb"></div></aside></div>
+<footer>Dentora. Prices in Egyptian pounds (EGP).</footer>
+<div id="dr" onclick="if(event.target==this)tg(0)"><div id="pn"><h2 style="margin-top:0" id="ph">Your order</h2>
+<div id="cv" class="o"><div id="items"></div><div class="tot" id="tot"></div><button class="cp" onclick="co(1)">Checkout</button></div>
+<div id="co"><label class="f">Full name<input id="fn" autocomplete="name"></label><label class="f">Phone number<input id="p1" type="tel" autocomplete="tel"></label><label class="f">Second phone number (optional)<input id="p2" type="tel"></label><label class="f">Delivery address<textarea id="ad" rows="2" autocomplete="street-address"></textarea></label>
+<div class="lb">Payment method</div><div id="pm"></div>
+<div class="lb">Discount code</div><div class="dc"><input id="dcode" placeholder="Enter code" aria-label="Discount code"><button onclick="applyD()">Apply</button></div><p class="er" id="dm"></p>
+<div id="sum"></div><p class="er" id="er"></p><button class="cp" onclick="place()">Place order</button><button class="bk" onclick="co(0)">Back to cart</button></div>
+<div id="dn"><p style="margin:0">Your order is ready. Copy it and send it to us to confirm payment and delivery.</p><textarea id="ot" readonly rows="12"></textarea><button class="cp" onclick="cpy()">Copy order</button><p id="cpm" class="er"></p><button class="bk" onclick="co(0)">Back to cart</button></div></div></div>
+<script>
+// To add a photo later: IMG["Product name"]="data:image/..." or a hosted image path
+const IMG={};
+const D={
+"Composites":"Chroma Nano-Hybrid 4.5g:168;M Dental:175;Ruby:175;Clara:185;Prime Dent:185;Combomax:255;Meta:275;i.light:350;Dia-Fill:360;Dolgunn:375;Di.fill:450;Nova:465;Coltene NG:465;Cavex:475;Charisma:555;Kerr:560;Den-Fill Micro (Korean):575;Den-Fill Nano (Korean):675;Itena:740;Shofu:865;Alpha Tokuyama:895;Coltene Everglow:825;Tetric N-Ceram:1245;Voco NHT:1160;Medental Economy:175;Master Dent Ortho Bonding Kit:1360;Kerr Composite Kit:2825",
+"Flowables":"Max Fill:105;Hi.fill:105;Elite:110;Ruby:175;Alpha:180;Any:180;Te.com:190;D.fill:220;Nova:230;Dia-Fill:255;Spident:265;Meta:265;Bulk Fill:335;Bulk Fill Capsules (Dentsply Sirona):155",
+"Bonding and etch":"Etchant Dentaleen 5g:25;Etchant Chem:20;Etchant Plus:45;Etchant Kerr:65;Etchant Meta:85;Combomax Bond:225;Clara Bond (Turkish):345;Meta Bond 5ml (Korean):435;Any Bond 5ml (Korean):475;Coltene OneCoat 5ml:650;Tokuyama Universal 1ml:665;Dolgunn Universal 5ml (Turkish):725;Ultra Bond 6ml:775;Flibro Bond:640;Bisco Bond Small:450;Bisco Bond Large (original):2135",
+"Sealants and liners":"D.seal Student Size:175;D.seal Large:375;Ziecal Automix:560;Vioseal Spident:685;Anyseal:695;Diaproseal:1175;Calcipex or Calcipaste:135;Metapex (Korean):525",
+"Glass ionomer and cements":"Glass Ionomer (Chinese):65;Riva Light Capsules:125;Riva Self Capsules:125;Fuji 9 Extra Capsules:135;Restore Glass:345;Ceram (American):425;Glass Ionomer (Brazilian):440;Micron 1 or 2:510;Carbofin Zinc Polycarboxylate (Czech):710;BMS Blue Large:1540;Comroglass Yellow Large:1545;Zinc Oxide:35;Eugenol:70;Zinc Oxide Eugenol (Egyptian):125;Supercem Resin Cement:1075",
+"Temporary fillings":"Galaxy:70;Acrotemp:85;T.fill:155;PSP (English):168;Orafill (Indian):185;Temporary Cement Non-Eugenol (Charm or Cavex):700",
+"Endodontics":"Paper Points:70;Gutta-Percha:70;Meta Gutta-Percha:110;Gutta-Percha Solvent Carven:65;MTA Box (3 pack):125;MTA:30;MTA Putty OneFill 1/2g (Korean):520;Adseal Sealer:775;N Root SP 1/2g:410;N Root SP 2g:1425;Well Root 1/2g:775;OneFill Bioceramic Sealer:1775;Ceraseal 1/2g:975;Ceraseal 2g:1825;EDTA Gel:65;EDTA Solution:75;Formocresol:70;Calcium Oxide:35;Irrigation Needles 3cm (carton):125;Side-Vented Needles Box:185;Pulp Devitalizer D.vital:410;Endo Ruler:35;Manual Files (Chinese):45;Manual Files Long:55;Spreader:50;Endo Bur Z:35;Endo Activator Ice:725",
+"Rotary file kits":"A-Line:195;M.Pro:230;Nic 4 File:235;Nic 6 File:255;E.flex Gold:255;E.flex Blue:265;Vidia Large:250;Vanta Blue:273;Pepsi Gold:275;M.Pro Gold:285;Rogin 4 File:328;Rogin 6 File:355",
+"Anesthesia":"Anesthetic Gel or Spray:25;Anesthesia Syringe:160;Long Needles (Chinese):175;Short Needles (Chinese):185;Anesthetic Blue:880;Anesthetic Artpharma:975;Anesthetic Italian:1250;Anesthetic Spanish:1650",
+"Impression materials":"Alginate Bazeen (Chinese):140;Alginate IQ:158;Alginate Hygedent:175;Alginate BMS:220;Alginate Zetalgin:265;Alginate Biokalgin:365;Alginate Tropicalgin:425;Alginate Cavex:445;Impression Compound:125;Green Stick:125;Pink Wax Large:185;Rubber Bowl and Spatula:25;Impression Tray Stainless:12;Impression Tray Plastic Colored:15;Gypsum 1kg:19;Silaxil Putty Kit Small:710;Zetaplus Putty Kit Small:780;Silaxil Kit Large:1870;Zetaplus Kit Large:1945;Addition Silicone Kit Large:1250;Impression Gun:310",
+"Gloves and masks":"Latex Gloves (Malaysian):157;Nitrile Gloves White:166;Nitrile Gloves Colored:157;Face Mask (Egyptian):35;Face Mask (Chinese):45;Face Shield:55;Over Gloves Box 200:45;Over Gloves Bag:4;Gowns:13",
+"Disposables":"Plastic Napkins:32;Napkins Packet of 100:68;Napkin Holder:25;Sterile Gauze Large:38;Cotton Roll Packet:95;Cotton (Mahalla) Large:87;Suction Tips Bag (Egyptian):76;Suction Tips Bag (Italian):125;Cups Column:22;Water and Air Tips Stainless:18;Water and Air Tips Bag of 250:190;Dental Floss:30;Surgical Blades Box:175;Surgical Sutures Box:210",
+"Sterilization":"Sterilization Pouches 5cm:80;Pouches 7cm:110;Pouches 9cm:145;Pouches 13cm:185;Sterilization Roll 5cm:155;Sterilization Roll 7.5cm:230;Sterilization Roll 10cm:310;Hand Sanitizer Liquid:75;Surface Disinfectant:80;Sidex Disinfectant Sachet (makes 5L):18;Alcohol 1 Liter:45;Irrigation Saline, Hypochlorite or Chlorhexidine:32",
+"Rubber dam":"Rubber Dam Sheet:8;Paper Template:8;Metal Template:48;Metal Frame:48;Plastic Frame:85;Clamp (Pakistani):23;Clamp Holder:270;Rubber Dam Punch:370;Sheets Box Puritex or Ceyflex:290;Sheets Box Flamingo:310;Sheets Box Secuntary:335;Sheets Box Secuntary Silk Blue:460;Liquidam:135;Retraction Cord:95;Gel Foam Large:100",
+"Burs and polishing":"High-Speed Burs (imported):5.5;Carbide Burs:34;Surgical Burs:38;Long Shank Bur:25;Crown Cutter:75;Polishing Burs White:18;Rubber Cup:4.5;Linen Polishing Brush:5.5;Nylon Polishing Brush:2.5;Nylon Brushes Box of 100:158;Finishing Strips Torvm:70;Finishing Discs:140;Finishing Kit (Chinese):150;Polishing Paste:55;Composite Polishing Paste:55;Amalgam Polishing Paste:45;Articulating Paper Box:110;Wedges Wooden:135;Wedges Plastic:145",
+"Matrices":"Tofflemire Bands (cut):6;Tofflemire Matrix:80;Matrix Band Roll:55;Celluloid Strips:10;Sectional Matrix Kit:135;Saddle Matrix Kit:245;Saddle Matrix Refill:210;Resin Rings:135;Spoon or Twin Matrix:185",
+"Hand instruments":"Mirror Head:9;Mirror Head Mega:87;Mirror Head Relax:120;Mirror Handle Plastic:18;Mirror Handle Metal:27;Photo Mirrors Set of 3:185;Probe:26;Endo Probe:30;Perio Probe Graduated:35;Carver or Burnisher:26;Spatula and Glass Slab:35;Tweezers:42;Locking Tweezers:48;Scissors:45;Scalpel Handle:28;Excavator:28;Composite Applicator:28;Plastic Composite Instrument:28;Composite Instrument Kit:185;Hand Scaler or Curette:28;Cord Applicator:28;Bone File:90;Bone Curette:90;Needle Holder:90;Elevator:105;Forceps:215;Metal Post Key:35;Metal Post Kit (Chinese):925",
+"Scalers":"Ultrasonic Tips:37;Endo/Perio Ultrasonic Tips:275;Scaler Key:160;Ultrasonic Scaler Device:1950;EZ.Cure Periodontal Treatment:135;Fluoride Varnish:75;Hemostop or Hemostal:90;Alvogel for Dry Socket:55",
+"Orthodontics":"Brackets Card (case):75;Brackets Box (imported Chinese):75;Bands Kit:625;Ortho Brushes:50;Band Remover:325;Band Pusher:285;Band Setter:265;Bracket Holder:185;Bracket Position Remover:335;Ortho Photo Mirror Kit:185;Mathieu Plier:375;NiTi Wires Round:32;Stainless Wires Round:32;Rectangular Wires:35;Buccal Tube:25;Ortho Wax:12;Ortho Stars Sheet:55;Elastics Bag:14;Open Coil Spring:35;Power Chain:85;Ties Small Ring (40 pcs):45;Ties Wide Ring (40 pcs):125",
+"Handpieces and contra-angles":"Contra Ball Bearing:75;Contra Shaft:185;Contra Cartridge:240;Future Key:475;Trend:975;Vig:1325;K&K:1100;X-Platform:1250;Being Push Button:1300;Apple:1550;NSK LED:1600;Coxo:1650;Coxo 2:2150;Coxo LED:3450;Lospeed X-Platform:750;Lospeed Being:750;Adapter X-Platform:750;Adapter Apple:1285;Adapter Coxo:1750;Sensor Cover:135;Sensor Sleeves:125;Camera Sleeves:125;Silicone Sleeves for Rotary:135"};
+const C=Object.keys(D),cart={};let cat="All";
+const P=[];C.forEach(c=>D[c].split(";").forEach(x=>{const i=x.lastIndexOf(":");P.push({c,n:x.slice(0,i),p:+x.slice(i+1)})}));
+const $=i=>document.getElementById(i);
+const G={"Operative":["Composites","Flowables","Bonding and etch","Sealants and liners","Glass ionomer and cements","Temporary fillings","Matrices","Burs and polishing","Rubber dam"],"Endodontics":["Endodontics","Rotary file kits"],"Prosthodontics":["Impression materials"],"Orthodontics":["Orthodontics"],"Surgery and periodontics":["Anesthesia","Scalers","Hand instruments"],"Infection control and disposables":["Gloves and masks","Disposables","Sterilization"],"Equipment":["Handpieces and contra-angles"]};let og="";
+function cats(){$("sb").innerHTML=`<button class="${cat=="All"?"on":""}" onclick="pick('All')">All products</button>`+Object.keys(G).map(g=>`<div><button class="gh" onclick="og=og=='${g}'?'':'${g}';cats()">${g}<span>${og==g?"−":"+"}</span></button>${og==g?G[g].map(c=>`<button class="sub ${c==cat?"on":""}" onclick="pick('${c}')">${c}</button>`).join(""):""}</div>`).join("")}
+function pick(c){cat=c;sd(0);show();window.scrollTo(0,0)}
+function sd(o){$("sd").classList.toggle("o",!!o)}
+function show(){cats();const q=$("s").value.toLowerCase().trim();let h="";
+(cat=="All"?C:[cat]).forEach(c=>{const l=P.map((p,i)=>[p,i]).filter(([p])=>p.c==c&&(!q||p.n.toLowerCase().includes(q)||c.toLowerCase().includes(q)));
+if(l.length)h+=`<h2>${c}</h2><div class="grid">`+l.map(([p,i])=>`<div class="p"><div class="ph">${IMG[p.n]?`<img src="${IMG[p.n]}" alt="">`:"Photo"}</div><div class="n">${p.n}</div><div class="r"><span class="pr">${p.p} EGP</span><button class="add" onclick="add(${i})">Add</button></div></div>`).join("")+"</div>"});
+$("list").innerHTML=h||'<p class="empty">No products match your search. Try a shorter name.</p>'}
+function add(i){cart[i]=(cart[i]||0)+1;upd()}
+function ch(i,d){cart[i]+=d;if(cart[i]<1)delete cart[i];upd()}
+function upd(){const k=Object.keys(cart);let t=0,n=0;
+$("items").innerHTML=k.length?k.map(i=>{const p=P[i],q=cart[i];t+=p.p*q;n+=q;return`<div class="ci"><span>${p.n}<br><small>${p.p} EGP</small></span><span class="q"><button onclick="ch(${i},-1)">-</button> ${q} <button onclick="ch(${i},1)">+</button></span></div>`}).join(""):'<p class="empty">Your cart is empty. Add products to build your order.</p>';
+$("cc").textContent=n;$("tot").textContent="Total: "+t+" EGP"}
+function tg(o){$("dr").classList.toggle("o",!!o);if(o)view("cv")}
+// Edit payment methods and discount codes here (percent off)
+const PM=[["Cash on delivery","Pay the courier when your order arrives"],["Mobile wallet","Vodafone Cash, e& Cash or Orange Cash"],["InstaPay","Instant transfer from your bank app"],["Card","Visa, Mastercard or Meeza"],["Fawry","Pay with a reference code at any Fawry outlet"]];
+const DC={"STUDENT10":10,"WELCOME5":5};let pm=0,disc=0,dcode="";
+const sub=()=>Object.keys(cart).reduce((a,i)=>a+P[i].p*cart[i],0);
+function view(v){["cv","co","dn"].forEach(i=>$(i).classList.toggle("o",i==v));$("ph").textContent=v=="cv"?"Your order":v=="co"?"Checkout":"Order ready"}
+function co(f){if(f){if(!Object.keys(cart).length)return;pms();sm();view("co")}else view("cv")}
+function pms(){$("pm").innerHTML=PM.map((m,i)=>`<label class="pmo"><input type="radio" name="pm" ${i==pm?"checked":""} onchange="pm=${i}"><span><b>${m[0]}</b><br><small>${m[1]}</small></span></label>`).join("")}
+function applyD(){const c=$("dcode").value.trim().toUpperCase();if(DC[c]){disc=DC[c];dcode=c;$("dm").style.color="var(--tl)";$("dm").textContent="Code "+c+" applied: "+disc+"% off"}else{disc=0;dcode="";$("dm").style.color="";$("dm").textContent="That code isn't valid. Check the spelling and try again."}sm()}
+function sm(){const s=sub(),d=Math.round(s*disc/100);$("sum").innerHTML=`<div class="ci"><span>Subtotal</span><span>${s} EGP</span></div>${d?`<div class="ci"><span>Discount (${dcode})</span><span>-${d} EGP</span></div>`:""}<div class="tot">Total: ${s-d} EGP</div>`}
+function place(){const v=i=>$(i).value.trim();if(!v("fn")||!v("p1")||!v("ad")){$("er").textContent="Please fill in your name, phone number and address.";return}$("er").textContent="";
+const s=sub(),d=Math.round(s*disc/100);
+$("ot").value=Object.keys(cart).map(i=>cart[i]+" x "+P[i].n+" ("+P[i].p+" EGP)").join("\n")+"\n\nSubtotal: "+s+" EGP"+(d?"\nDiscount ("+dcode+"): -"+d+" EGP":"")+"\nTotal: "+(s-d)+" EGP\nPayment: "+PM[pm][0]+"\n\nName: "+v("fn")+"\nPhone: "+v("p1")+(v("p2")?" / "+v("p2"):"")+"\nAddress: "+v("ad");
+$("cpm").textContent="";view("dn")}
+function cpy(){const t=$("ot").value;const ok=()=>$("cpm").textContent="Copied. Paste it in a message to us.",no=()=>{$("ot").select();$("cpm").textContent="Select the text above and copy it."};try{navigator.clipboard.writeText(t).then(ok,no)}catch(e){no()}}
+$("s").addEventListener("input",()=>{cat="All";show()});show();upd();
+</script></body></html>
